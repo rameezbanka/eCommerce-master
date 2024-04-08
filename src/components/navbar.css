@@ -1,0 +1,116 @@
+/* navbar.css */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+}
+
+.links a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 28px;
+}
+
+.links a.shop {
+  font-size: 28px; 
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input {
+  padding: 8px;
+  margin-right: 10px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+.header-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.header-auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header-auth-options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header-auth-options button {
+  margin: 0 10px;
+  padding: 12px 20px; 
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  font-size: 20px; 
+}
+
+.header-auth-options button:hover {
+  background-color: #0056b3;
+}
+
+
+.links .login {
+  margin-right: 28px; 
+}
+
+.button2 {
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .links {
+    display: none;
+  }
+}
+.login {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px; 
+  background-color: #007bff; 
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease; 
+}
+
+.login:hover {
+  background-color: #0056b3; 
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); 
+}
+

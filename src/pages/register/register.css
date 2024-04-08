@@ -1,0 +1,51 @@
+.unique-tab-content {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.unique-input-container {
+  margin-bottom: 15px;
+}
+
+.unique-input {
+  padding: 10px;
+}
+
+.unique-label {
+  display: inline-block;
+  width: 100px; /* Adjust the width of the label */
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.unique-input input {
+  display: inline-block;
+  width: calc(100% - 110px); /* Adjust the width of the input field */
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.unique-login-button-container {
+  text-align: center;
+}
+
+.unique-register-button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.unique-register-button:hover {
+  background-color: #0056b3;
+}
