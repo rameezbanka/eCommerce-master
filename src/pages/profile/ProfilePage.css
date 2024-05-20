@@ -1,16 +1,44 @@
 .profile-page {
-    margin: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-page h1 {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .user-details {
-    border: 1px solid #ccc;
-    padding: 20px;
-    border-radius: 5px;
+    text-align: center;
 }
 
 .profile-pic {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
+    margin-bottom: 20px;
+    border: 3px solid #fff; /* Add border for profile picture */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow for profile picture */
+}
+
+.user-details p {
     margin-bottom: 10px;
+}
+
+.user-details p:first-child {
+    margin-top: 0;
+}
+
+.user-details p:last-child {
+    margin-bottom: 0;
+}
+
+.loading-message {
+    text-align: center;
+    font-style: italic;
+    color: #888;
 }

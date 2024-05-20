@@ -26,7 +26,7 @@ const ProfilePage = () => {
         };
 
         fetchUserData();
-    }, []);
+    }, );
 
     return (
         <div className="profile-page">

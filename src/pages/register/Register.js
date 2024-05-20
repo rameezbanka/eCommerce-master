@@ -50,16 +50,16 @@ const Register = ({ onClose }) => {
       <div className="unique-input-container">
         <div className="unique-input">
           <label htmlFor="firstName" className="unique-label">First Name*</label>
-          <input id="firstName" value={firstName} onChange={handleFirstNameChange} />
+          <input id="firstName" value={firstName}  required onChange={handleFirstNameChange} />
           
           <label htmlFor="lastName" className="unique-label">Last Name*</label>
-          <input id="lastName" value={lastName} onChange={handleLastNameChange} />
+          <input id="lastName" value={lastName} required onChange={handleLastNameChange} />
           
           <label htmlFor="email" className="unique-label">Email*</label>
-          <input id="email" type="email" value={email} onChange={handleEmailChange} />
+          <input id="email" type="email" required value={email} onChange={handleEmailChange} />
           
           <label htmlFor="password" className="unique-label">Password*</label>
-          <input id="password" type="password" value={password} onChange={handlePasswordChange} />
+          <input id="password" type="password" required value={password} onChange={handlePasswordChange} />
           
           <div className="unique-login-button-container">
             <button className="unique-register-button" onClick={handleRegister}>

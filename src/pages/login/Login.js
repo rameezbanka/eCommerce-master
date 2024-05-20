@@ -51,7 +51,7 @@ const Login = ({ onClose, onSuccess }) => {
           onChange={(e) => setEmail(e.target.value)}
           type="email"
           placeholder="Your email@example.com"
-          className="input-field"
+          className="input-field" required
         />
       </div>
       <div className="input-container">
@@ -61,7 +61,7 @@ const Login = ({ onClose, onSuccess }) => {
           onChange={(e) => setPassword(e.target.value)}
           type="password"
           placeholder="**********"
-          className="input-field"
+          className="input-field" required
         />
       </div>
       <div className="error-message">{errorMessage}</div>

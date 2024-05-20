@@ -14,7 +14,6 @@ const CartPage = () => {
             try {
 
                 const userId = result?.email;
-                console.log(result.email);
                 if (!userId) {
                     console.log("User is not loggedIn");
                     return;
@@ -26,15 +25,13 @@ const CartPage = () => {
                 }
                 const data = await response.json();
                 setCartItems(data);
-                console.log(data);
-                console.log(cartItems);
             } catch (error) {
                 console.error("Error fetching cart items:", error);
             }
         };
 
         fetchCartItems();
-    }, []);
+    },[]);
 
     const updateCartItemQuantity = async (itemId, quantity) => {
         try {
@@ -70,9 +67,15 @@ const CartPage = () => {
         return str;
     };
 
+    console.log("cart", cartItems);
     return (
         <div>
             <h1>Your Cart</h1>
+            <div className="cart-actions">
+            {cartItems.some(item => item.quantity > 0) && (
+                    <Link to={{pathname:"/checkout", state: { cartItems: cartItems } }} className="btn-1">CheckOut</Link>
+                )}
+            </div>
             {result?.email ?  (
                 cartItems.filter(item => item.quantity > 0).length > 0 ? (
                     cartItems.filter(item=>item.quantity>0).map((item) => (

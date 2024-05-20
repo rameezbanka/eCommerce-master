@@ -1,0 +1,92 @@
+.checkout-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.checkout-form {
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 400px; 
+}
+
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start; 
+}
+
+.form-group label {
+  flex-basis: 30%;
+  margin-right: 10px;
+}
+
+.form-group input {
+  flex-grow: 1; 
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#address {
+  width: 100%;
+  height: 100px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.payment-section {
+  margin-bottom: 20px;
+}
+
+.payment-section h2 {
+  margin-bottom: 10px;
+}
+
+.payment-methods label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.checkout-btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.order-summary {
+  border: 1px solid #ccc;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box; 
+}
+
+.order-summary h2 {
+  margin-bottom: 10px;
+}
+
+.order-items {
+  margin-bottom: 20px;
+}
+
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.order-item span {
+  flex-basis: 30%;
+}
+
+.total-amount {
+  font-weight: bold;
+}

@@ -17,7 +17,7 @@ export const ProductDetails = (props)=>{
 return (
     <div >
       <div className="product">
-      <img src={product.image} alt={"Image not found"} />
+      <img src={product.image}  />
       <h2>{product.title}</h2>
       <p>Price: Rs {product.price}</p>
       </div>

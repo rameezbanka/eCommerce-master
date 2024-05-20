@@ -1,5 +1,6 @@
 .cart-item {
     display: flex;
+    justify-content: last baseline;
     margin-bottom: 20px;
 }
 .item-details p {
@@ -37,6 +38,34 @@
     flex: 0 0 100px; /* Fixed width for quantity column */
     text-align: center;
     margin-right: 20px;
+}
+.cart-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5%;
+    margin-bottom: 20px;
+}
+.btn-1.checkout {
+    background-color: #4CAF50; /* Green */
+    border-color: #4CAF50;
+}
+
+.btn-1{
+    text-decoration: none;
+    border: 2 px solid;
+    padding: 10px;
+    border-radius: 4px;
+    margin: 2px ;
+    width: 100px;
+    justify-content: center;
+    background-color: rgb(31, 21, 21);
+    font-size: 16px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all 0.3s ease;
+}
+.btn-1:hover {
+    transform: scale(1.1); 
 }
 
 .quantity-btn {
